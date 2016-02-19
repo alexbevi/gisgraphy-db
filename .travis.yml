@@ -13,8 +13,8 @@ services:
 
 before_install:
   - sudo /etc/init.d/postgresql stop
-  - docker build -t rmarchei/gisgraphy-db .
-  - docker run -d -p 127.0.0.1:5432:5432 --name gisgraphy-db rmarchei/gisgraphy-db && sleep 10
+  - docker build -t alexbevi/gisgraphy-db .
+  - docker run -d -p 127.0.0.1:5432:5432 --name gisgraphy-db alexbevi/gisgraphy-db && sleep 10
   - docker ps -a
   - docker top gisgraphy-db
   - docker exec -it gisgraphy-db id

@@ -1,4 +1,4 @@
-FROM mdillon/postgis:9.4
+FROM mdillon/postgis:latest
 MAINTAINER Ruggero Marchei <ruggero.marchei@daemonzone.net>
 
 ENV GISGRAPHY_VERSION 4.0-beta1
